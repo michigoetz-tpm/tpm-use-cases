@@ -113,9 +113,10 @@ Tone: Professional, executive, concise, and proactive.
 
 ## Getting Started
 
-1. Enable Google Workspace MCP integration in your Claude environment
-2. Grant read access to Calendar, Gmail, and Drive
-3. Say "Good Morning" or request a "Morning Briefing"
+1. Go to Gemini --> Gems --> New Gem --> paste this into the instructions. 
+or Enable Google Workspace MCP integration in your Claude environment
+3. Grant read access to Calendar, Gmail, and Drive
+4. Say "Good Morning" or request a "Morning Briefing"
 
 ---
 
