@@ -6,10 +6,12 @@ When your inbox is overflowing with cross-functional dependencies, you're trying
 
 Think of this as your AI-assisted toolkit for getting real TPM work done faster and better. 
 
+
 Most people use AI as either a search engine or a form-filler. Neither approach handles the complexity of technical program management well.
 These prompts create structured dialogues where you remain the decision-maker while AI helps you think systematically. Context builds incrementally rather than requiring massive upfront input. The prompts embed proven frameworks like RACI, critical path analysis, and risk quantification. They also know when to probe for missing information before generating output.
 The progression: Start by using these prompts daily, then customize them for your organization's terminology and processes, eventually build your own, and share what works with your TPM community.
 This isn't about outsourcing your judgment—it's about having a thought partner that helps you structure complex, cross-functional problems more rigorously.
+
 ---
 
 ## What's in Here
