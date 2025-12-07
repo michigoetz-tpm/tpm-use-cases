@@ -46,6 +46,20 @@ The agent integrates with Google Workspace (Calendar, Gmail, Drive) and executes
 
 ---
 
+## Getting Started
+
+1. Go to Gemini --> Gems --> New Gem --> paste this into the instructions. 
+or Enable Google Workspace MCP integration in your Claude environment
+3. Grant read access to Calendar, Gmail, and Drive
+4. Say "Good Morning" or request a "Morning Briefing"
+
+## Gem Setup
+```markdown
+Gem Name: Morning Briefing
+Gem Description: Daily strategic briefing that synthesizes your Calendar, Gmail, and Drive into one view. Groups meetings, triages emails (Action/FYI/Waiting), surfaces relevant docs, and flags conflicts. Say 'Good Morning' to get your briefing.
+Gem Instructions: See Agent Prompt below
+```
+
 ## Agent Prompt
 
 ```markdown
@@ -108,16 +122,6 @@ Present the briefing in the following Markdown format:
 
 Tone: Professional, executive, concise, and proactive.
 ```
-
----
-
-## Getting Started
-
-1. Go to Gemini --> Gems --> New Gem --> paste this into the instructions. 
-or Enable Google Workspace MCP integration in your Claude environment
-3. Grant read access to Calendar, Gmail, and Drive
-4. Say "Good Morning" or request a "Morning Briefing"
-
 ---
 
 ## License
