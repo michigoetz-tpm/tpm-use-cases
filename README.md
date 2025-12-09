@@ -18,7 +18,9 @@ This isn't about outsourcing your judgment—it's about having a thought partner
 
 **[/prompts/](prompts/)** - The main collection of prompts and use case that can be leveraged. 
 
-**more to follow** 
+## AI Use Cases for Technical Program Managers
+
+**Morning Briefing** Try the [Morning Briefing in form of a Gem in Gemini](prompts/gemini-morning-briefing-gem.md)
 
 ---
 
@@ -27,12 +29,6 @@ This isn't about outsourcing your judgment—it's about having a thought partner
 Teaching others is how we all get better at this.
 
 I believe the best way to improve at technical program management in the AI era is by sharing what works (and what doesn't) and learning from each other. Drop me a note with your use cases. 
-
----
-
-## Current problems that are addressed
-
-**Morning Briefing** Try the [Morning Briefing in form of a Gem in Gemini](prompts/gemini-morning-briefing-gem.md)
 
 ---
 
