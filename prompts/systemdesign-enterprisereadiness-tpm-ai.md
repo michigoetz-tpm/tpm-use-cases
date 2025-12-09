@@ -1,12 +1,12 @@
-# Enterprise AI Readiness Assessment Spider
+# System Design & Architecture Tradeoff Framework
 
 ## Overview
 
-An interactive visualization tool for Technical Program Managers and Product Leaders to assess and communicate trade-offs when building enterprise-ready AI products. The spider diagram helps surface tensions, synergies, and dependencies across system optimization, enterprise readiness, and AI-specific dimensions.
+An interactive visualization tool for Technical Program Managers to assess and communicate trade-offs when discussing architecture tradeoffs or enterprise readiness features. It comes along with an overlay when designing AI products. The spider diagram helps surface tensions, synergies, and dependencies across system optimization, enterprise readiness, and AI-specific dimensions.
 
 ## Use Case
 
-**Problem:** When building AI products for enterprise customers, teams often struggle to communicate complex trade-offs between technical architecture decisions and enterprise feature requirements. Stakeholders say "we want it all" without understanding what's actually in tension.
+**Problem:** When building platform products or AI products for enterprise customers, teams often struggle to communicate complex trade-offs between technical architecture decisions and enterprise feature requirements. Stakeholders say "we want it all" without understanding what's actually in tension.
 
 **Solution:** An interactive spider diagram that visualizes:
 - **System Optimization dimensions** (scalability, performance, reliability, cost, security, etc.)
@@ -106,7 +106,7 @@ Based on [EnterpriseReady.io](https://www.enterpriseready.io):
 
 **Component:** React + Tailwind CSS
 
-**File:** `optimization-spider.jsx`
+**Output File:** `.jsx` file provided by Claude
 
 ## Prompt
 
@@ -168,10 +168,6 @@ When stakeholders say "we want it all," use the spider to force prioritization a
 - [EU AI Act](https://artificialintelligenceact.eu/) - AI regulatory requirements
 - [GDPR Article 22](https://gdpr-info.eu/art-22-gdpr/) - Automated decision-making requirements
 
-## Tags
-
-`enterprise-readiness` `ai-governance` `product-management` `trade-offs` `visualization` `react` `claude-artifacts`
-
 ---
 
-*Created for TPM AI Use Cases collection*
+*Built for TPMs who align architecture tradeoffs and enterprise readiness features with a dimension on what is important for AI products.*
