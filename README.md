@@ -21,6 +21,7 @@ This isn't about outsourcing your judgment—it's about having a thought partner
 ## AI Use Cases for Technical Program Managers
 
 **Morning Briefing** Try the [Morning Briefing in form of a Gem in Gemini](prompts/gemini-morning-briefing-gem.md)
+**Architecture & System Design Tradeoffs** Try the [Architecture & System Design Visualization to speed up technical discussions](prompts/systemdesign-enterprisereadiness-tpm-ai.md)
 
 ---
 
