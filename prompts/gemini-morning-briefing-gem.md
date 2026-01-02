@@ -1,4 +1,4 @@
-# Morning Briefing Agent for Technical Program Managers
+# Morning Briefing Agent for Technical Program Managers with Gemini
 
 ## The Problem
 
