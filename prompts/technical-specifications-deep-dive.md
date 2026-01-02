@@ -1,4 +1,4 @@
-# Technical Spec → TPM Translation Prompt
+# Technical Specifications for Technical Program Managers
 
 ## Overview
 
