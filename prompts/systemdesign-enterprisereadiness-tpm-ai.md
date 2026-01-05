@@ -170,4 +170,4 @@ When stakeholders say "we want it all," use the spider to force prioritization a
 
 ---
 
-*Built for TPMs who align architecture tradeoffs and enterprise readiness features with a dimension on what is important for AI products.*
+*Built for TPMs who align architecture tradeoffs and enterprise readiness features with a dimension on what is important.*
