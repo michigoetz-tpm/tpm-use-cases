@@ -1,4 +1,4 @@
-# Technical Program Manager Prompts for Generative AI
+# Technical Program Management X AI
 
 **Practical AI prompts, workflows, and tools that help Technical Program Manager for program execution with AI**
 
