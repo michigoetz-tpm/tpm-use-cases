@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "source": "Aha! Roadmaps",
+    "workspace": "novagrid",
+    "exported_at": "2026-04-13T08:00:00Z",
+    "exported_by": "tpm-integration@novagrid.io",
+    "note": "Aha! is milestone SoT for TPMs. Engineers do not update Aha! directly — TPMs reconcile from Jira/Linear weekly.",
+    "simulation_note": "Simulated state as of 2026-04-13. Baseline: 2026-03-11. Auth0 punted (T1), Model Serving descoped (T2), SHIELD mandate issued (T3), MERIDIAN mobile endpoints scoped (T4), PULSE FlowEngine unresolved (T5)."
+  },
+  "programs": [
+    {
+      "id": "PRG-NEXUS",
+      "name": "NEXUS — Platform Re-architecture & Service Consolidation",
+      "tpm": "sara.lindqvist@novagrid.io",
+      "sponsor": "yuki.tanaka@novagrid.io",
+      "priority": "P0",
+      "phase": "Execution",
+      "startDate": "2025-11-01",
+      "targetEndDate": "2026-12-31",
+      "overallRag": "amber",
+      "ragRationale": "IAM M6 confirmed slipping to Aug 28 (Auth0 punt). Cascading to SHIELD (14 controls), HORIZON (GA slip), ATLAS (workaround debt). OTel and service retirement progressing but below plan.",
+      "milestones": [
+        { "id": "NEXUS-M1", "name": "Service inventory + retirement plan", "targetDate": "2026-01-31", "completedDate": "2026-01-28", "status": "completed", "percentComplete": 100 },
+        { "id": "NEXUS-M2", "name": "IAM unification design approved", "targetDate": "2026-02-28", "completedDate": "2026-02-26", "status": "completed", "percentComplete": 100 },
+        { "id": "NEXUS-M3", "name": "OpenTelemetry migration — DataCore teams", "targetDate": "2026-04-30", "completedDate": null, "status": "at_risk", "percentComplete": 46, "ragNote": "4 holdout teams partially resolved after VP Eng OTel directive Apr 1. On track to close majority by Apr 30 but tail teams may slip." },
+        { "id": "NEXUS-M4", "name": "First 60 services retired", "targetDate": "2026-05-31", "completedDate": null, "status": "at_risk", "percentComplete": 30, "ragNote": "Undocumented dependencies continuing to surface. 18 services retired so far. Buffer consumed. May slip 2-3 weeks." },
+        { "id": "NEXUS-M5", "name": "Unified CI/CD — all 15 teams", "targetDate": "2026-06-30", "completedDate": null, "status": "at_risk", "percentComplete": 37, "ragNote": "Jenkins resistance from 4 DataCore leads softening after Yuki all-hands Apr 8. GHA migration tooling (F4) now at 65%." },
+        { "id": "NEXUS-M6", "name": "IAM unified service live in prod", "targetDate": "2026-08-28", "completedDate": null, "status": "behind", "percentComplete": 15, "ragNote": "SLIPPED from Jul 31. Auth0 contract decision punted by CISO Mar 18. Auth module (F1) blocked on contract. Cascades: SHIELD 14 controls, HORIZON GA, ATLAS workaround." },
+        { "id": "NEXUS-M7", "name": "Total service count <200", "targetDate": "2026-12-31", "completedDate": null, "status": "not_started", "percentComplete": 0 }
+      ],
+      "features": [
+        { "id": "NEXUS-F1", "name": "IAM service — Auth module", "status": "blocked", "percentComplete": 17, "team": "Security & Compliance Eng", "linkedJiraEpic": null, "note": "Blocked on Auth0 contract decision. Only peripheral scaffolding work proceeding." },
+        { "id": "NEXUS-F2", "name": "OpenTelemetry collector deployment", "status": "in_development", "percentComplete": 61, "team": "Core Infrastructure" },
+        { "id": "NEXUS-F3", "name": "Service dependency graph tooling", "status": "in_development", "percentComplete": 87, "team": "Developer Experience" },
+        { "id": "NEXUS-F4", "name": "Jenkins → GitHub Actions migration playbook", "status": "in_development", "percentComplete": 65, "team": "Developer Experience" }
+      ]
+    },
+    {
+      "id": "PRG-ATLAS",
+      "name": "ATLAS — Enterprise NovaAI Launch",
+      "tpm": "marcus.chen@novagrid.io",
+      "sponsor": "rachel.lim@novagrid.io",
+      "priority": "P0",
+      "phase": "Execution",
+      "startDate": "2025-10-01",
+      "targetEndDate": "2026-06-30",
+      "overallRag": "amber",
+      "ragRationale": "SSO (M3) nearly complete — Apex Health demo Apr 2 succeeded. Audit logging (M4) slipped 3 weeks to May 21 (Model Serving descope). SLA gap (94.2%) still unresolved. Auth0 workaround entrenched.",
+      "milestones": [
+        { "id": "ATLAS-M1", "name": "Enterprise requirements finalized", "targetDate": "2026-01-31", "completedDate": "2026-01-29", "status": "completed", "percentComplete": 100 },
+        { "id": "ATLAS-M2", "name": "Tenant isolation design approved", "targetDate": "2026-02-28", "completedDate": "2026-02-25", "status": "completed", "percentComplete": 100 },
+        { "id": "ATLAS-M3", "name": "SSO integration live (Okta, Azure AD)", "targetDate": "2026-04-30", "completedDate": null, "status": "on_track", "percentComplete": 88, "ragNote": "Apex Health Apr 2 demo succeeded with SSO in sandbox. M3 on pace to close by Apr 25." },
+        { "id": "ATLAS-M4", "name": "Audit logging MVP", "targetDate": "2026-05-21", "completedDate": null, "status": "at_risk", "percentComplete": 51, "ragNote": "SLIPPED from Apr 30 by 3 weeks. Model Serving descoped from 90% to 55% for SPARK — ATLAS audit logging team now running at sustainable pace but date moved." },
+        { "id": "ATLAS-M5", "name": "Usage billing metering live", "targetDate": "2026-05-31", "completedDate": null, "status": "on_track", "percentComplete": 71 },
+        { "id": "ATLAS-M6", "name": "SLA monitoring infra live", "targetDate": "2026-05-31", "completedDate": null, "status": "behind", "percentComplete": 18, "ragNote": "Core Infra continued deprioritization. SLA at 94.2% — emergency fix still ongoing. Credibility risk for enterprise commitments." },
+        { "id": "ATLAS-M7", "name": "First 5 enterprise GA customers", "targetDate": "2026-06-30", "completedDate": null, "status": "at_risk", "percentComplete": 0, "ragNote": "Dependent on SSO (M3), audit logging (M4 slipped), SLA credibility (M6 behind)." },
+        { "id": "ATLAS-M8", "name": "GA launch + analyst briefings", "targetDate": "2026-06-30", "completedDate": null, "status": "at_risk", "percentComplete": 0 }
+      ],
+      "features": [
+        { "id": "ATLAS-F1", "name": "Multi-tenant model serving", "status": "in_development", "percentComplete": 64, "team": "Model Serving", "note": "Auth0 workaround built in as interim solution. Technical debt accruing — estimated 3wk refactor effort when NEXUS IAM lands." },
+        { "id": "ATLAS-F2", "name": "Enterprise SSO (SAML/OIDC)", "status": "in_development", "percentComplete": 88, "team": "Security & Compliance Eng" },
+        { "id": "ATLAS-F3", "name": "Audit logging pipeline", "status": "in_development", "percentComplete": 51, "team": "Model Serving" },
+        { "id": "ATLAS-F4", "name": "Usage metering + Stripe billing", "status": "in_development", "percentComplete": 71, "team": "AI Application Builder" },
+        { "id": "ATLAS-F5", "name": "SLA monitoring + alerting", "status": "in_development", "percentComplete": 18, "team": "Core Infrastructure" }
+      ]
+    },
+    {
+      "id": "PRG-SHIELD",
+      "name": "SHIELD — SOC 2 Type II Certification",
+      "tpm": "fatima.alhassan@novagrid.io",
+      "sponsor": "james.whitfield@novagrid.io",
+      "priority": "P0",
+      "phase": "Execution",
+      "startDate": "2025-09-01",
+      "targetEndDate": "2026-08-31",
+      "overallRag": "red",
+      "ragRationale": "14 controls still blocked on NEXUS IAM (Auth0 punt confirmed Aug 28). Mandate-driven acceleration recovering trajectory — 48 controls complete vs 34. M3 shifted to Jun 1. August audit feasibility improving but not yet assured.",
+      "milestones": [
+        { "id": "SHIELD-M1", "name": "Control gap analysis complete", "targetDate": "2026-01-31", "completedDate": "2026-01-30", "status": "completed", "percentComplete": 100 },
+        { "id": "SHIELD-M2", "name": "All controls assigned to owners", "targetDate": "2026-02-28", "completedDate": "2026-02-27", "status": "completed", "percentComplete": 100 },
+        { "id": "SHIELD-M3", "name": "70 controls complete", "targetDate": "2026-06-01", "completedDate": null, "status": "at_risk", "percentComplete": 48, "ragNote": "SLIPPED from May 1 to Jun 1. Yuki mandate Mar 25 unblocked teams. Trajectory now 6-8 controls/week. 48 complete as of Apr 13. Recoverable to Jun if mandate holds and IAM-dependent controls handled on parallel path." },
+        { "id": "SHIELD-M4", "name": "100 controls complete", "targetDate": "2026-07-01", "completedDate": null, "status": "behind", "percentComplete": 48, "ragNote": "14 controls blocked on NEXUS IAM (now Aug 28). Unless parallel path found, 14 controls cannot complete before July deadline. Deloitte engagement at risk." },
+        { "id": "SHIELD-M5", "name": "Audit evidence package to Deloitte", "targetDate": "2026-07-15", "completedDate": null, "status": "at_risk", "percentComplete": 8, "ragNote": "Fatima started Vanta tagging. Evidence package for completed controls underway. IAM-blocked controls remain a gap." },
+        { "id": "SHIELD-M6", "name": "SOC 2 Type II certification", "targetDate": "2026-08-31", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "Board mandate. Deloitte audit date fixed. IAM blocker requires resolution path by Jun 1 or August certification is at extreme risk." }
+      ],
+      "controlStatus": {
+        "total": 100,
+        "complete": 48,
+        "inProgress": 34,
+        "notStarted": 18,
+        "blockedOnNexusIAM": 14,
+        "blockedOnMeridianAPI": 0,
+        "noOwnerAssigned": 0,
+        "changeNote": "14 new controls completed since Mar 11 (mandate effect). MERIDIAN M1 completed Apr 3 — unblocked 8 previously blocked controls, now in progress. All controls now have assigned owners (mandate resolved 'no owner' gap)."
+      }
+    },
+    {
+      "id": "PRG-MERIDIAN",
+      "name": "MERIDIAN — API Consolidation & v1 Deprecation",
+      "tpm": "james.okonkwo@novagrid.io",
+      "sponsor": "ingrid.solvang@novagrid.io",
+      "priority": "P1",
+      "phase": "Execution",
+      "startDate": "2025-12-01",
+      "targetEndDate": "2026-09-30",
+      "overallRag": "amber",
+      "ragRationale": "M1 completed Apr 3 (2-week slip from mobile endpoint scope-in, now resolved). Python SDK v2 on track for Apr 30 GA. Enterprise migration accelerating. SMB migration still unresourced — structural risk to Sep EoL.",
+      "milestones": [
+        { "id": "MERIDIAN-M1", "name": "v2 API feature parity", "targetDate": "2026-04-03", "completedDate": "2026-04-03", "status": "completed", "percentComplete": 100, "ragNote": "Completed Apr 3 including 3 mobile push notification endpoints (scoped in Mar 13). 2-week slip from Mar 20 original date." },
+        { "id": "MERIDIAN-M2", "name": "Python SDK v2 GA", "targetDate": "2026-04-30", "completedDate": null, "status": "on_track", "percentComplete": 92 },
+        { "id": "MERIDIAN-M3", "name": "JS + Java SDK v2 GA", "targetDate": "2026-05-31", "completedDate": null, "status": "on_track", "percentComplete": 72 },
+        { "id": "MERIDIAN-M4", "name": "Migration tooling + guides live", "targetDate": "2026-04-18", "completedDate": null, "status": "at_risk", "percentComplete": 85, "ragNote": "Slipped from Apr 1 to Apr 18. Enterprise migration guides in final review. On track for Apr 18." },
+        { "id": "MERIDIAN-M5", "name": "Enterprise customers 100% on v2", "targetDate": "2026-06-01", "completedDate": null, "status": "at_risk", "percentComplete": 48, "ragNote": "5 of 13 enterprise v1 customers migrated since Mar 11. Tooling improving. Achievable by Jun if pace holds." },
+        { "id": "MERIDIAN-M6", "name": "Mid-market customers 100% on v2", "targetDate": "2026-08-01", "completedDate": null, "status": "behind", "percentComplete": 45, "ragNote": "128 customers on v1 mid-market. Self-migration rate low. No dedicated support team. Resourcing decision still pending from Ingrid S." },
+        { "id": "MERIDIAN-M7", "name": "v1 API EoL + infrastructure shutdown", "targetDate": "2026-09-30", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "Legal commitment. SMB (453 customers) unresourced for migration. No slip room on EoL date." }
+      ],
+      "customerMigrationStatus": {
+        "enterprise": { "total": 41, "onV2": 33, "onV1": 8, "percentMigrated": 80 },
+        "midmarket": { "total": 210, "onV2": 94, "onV1": 116, "percentMigrated": 45 },
+        "smb": { "total": 639, "onV2": 205, "onV1": 434, "percentMigrated": 32 }
+      }
+    },
+    {
+      "id": "PRG-PULSE",
+      "name": "PULSE — Data Pipeline Overhaul (Airflow → Temporal)",
+      "tpm": "yuna.park@novagrid.io",
+      "sponsor": "amara.osei@novagrid.io",
+      "priority": "P1",
+      "phase": "Execution",
+      "startDate": "2026-01-01",
+      "targetEndDate": "2026-09-30",
+      "overallRag": "red",
+      "ragRationale": "DataCore recovering strongly after schema drift resolved (47% → 71%). FlowEngine stuck at 44% — Amara decision on SDK vs migration expected Apr 15. NovaAI runbooks in progress. Dual-run cost accruing ($380K/mo × 5 weeks = $475K since baseline).",
+      "milestones": [
+        { "id": "PULSE-M1", "name": "Temporal cluster deployed to prod", "targetDate": "2026-01-31", "completedDate": "2026-01-29", "status": "completed", "percentComplete": 100 },
+        { "id": "PULSE-M2", "name": "Migration runbook + tooling complete", "targetDate": "2026-02-28", "completedDate": "2026-02-26", "status": "completed", "percentComplete": 100 },
+        { "id": "PULSE-M3", "name": "DataCore pipelines 100% migrated", "targetDate": "2026-05-01", "completedDate": null, "status": "at_risk", "percentComplete": 71, "ragNote": "Schema drift (PULSE-189) resolved Mar 21 — significant velocity recovery. 127 of 180 pipelines migrated. 22 previously blocked are now migrating. Tight but achievable by May 1." },
+        { "id": "PULSE-M4", "name": "FlowEngine pipelines 100% migrated", "targetDate": "2026-07-01", "completedDate": null, "status": "behind", "percentComplete": 44, "ragNote": "Amara decision on SDK vs migration pending Apr 15. If SDK wins: M4 slips to Aug 12. If migration prioritized: Jul 1 feasible with acceleration." },
+        { "id": "PULSE-M5", "name": "NovaAI training pipelines migrated", "targetDate": "2026-06-01", "completedDate": null, "status": "behind", "percentComplete": 31, "ragNote": "Runbook creation 55% complete — blocker clearing by Apr 25. Migration will accelerate in May." },
+        { "id": "PULSE-M6", "name": "Airflow decommission", "targetDate": "2026-08-01", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "Dual-run cost $380K/month. 5 weeks elapsed since baseline = $475K accrued. If FlowEngine slips to Aug 12, decommission moves to Sep — $380K additional overrun." },
+        { "id": "PULSE-M7", "name": "Pipeline failure rate <1%", "targetDate": "2026-09-30", "completedDate": null, "status": "not_started", "percentComplete": 0 }
+      ],
+      "pipelineMigrationStatus": {
+        "datacore": { "total": 180, "migrated": 127, "percentComplete": 71, "blocked": 0, "changeNote": "Schema drift resolved Mar 21. 43 additional pipelines migrated." },
+        "flowengine": { "total": 340, "migrated": 150, "percentComplete": 44, "blocked": 8, "changeNote": "Minimal progress. SDK launch competing for team bandwidth." },
+        "novaai": { "total": 95, "migrated": 29, "percentComplete": 31, "blocked": 20, "changeNote": "Runbook creation underway. 11 pipelines migrated since Mar 11." },
+        "internal": { "total": 62, "migrated": 37, "percentComplete": 60, "blocked": 0 }
+      },
+      "dualRunCostPerMonth": 380000,
+      "dualRunCostAccrued_since_baseline": 475000
+    },
+    {
+      "id": "PRG-HORIZON",
+      "name": "HORIZON — Mobile Platform (iOS & Android)",
+      "tpm": "priya.kaur@novagrid.io",
+      "sponsor": "ingrid.solvang@novagrid.io",
+      "priority": "P1",
+      "phase": "Execution",
+      "startDate": "2026-01-15",
+      "targetEndDate": "2026-08-31",
+      "overallRag": "red",
+      "ragRationale": "Auth0 punt confirmed: NEXUS IAM now Aug 28, HORIZON needs IAM by Jun. GA slipping Jul 31 → Aug 31 minimum. Kestrel ($1.6M deal) budget cycle closes if slip hits Aug. MERIDIAN mobile endpoints resolved — M3 tracking Apr 18.",
+      "milestones": [
+        { "id": "HORIZON-M1", "name": "Product requirements finalized", "targetDate": "2026-02-28", "completedDate": "2026-02-27", "status": "completed", "percentComplete": 100 },
+        { "id": "HORIZON-M2", "name": "Design system complete", "targetDate": "2026-03-20", "completedDate": "2026-03-20", "status": "completed", "percentComplete": 100 },
+        { "id": "HORIZON-M3", "name": "Backend API contracts finalized", "targetDate": "2026-04-18", "completedDate": null, "status": "at_risk", "percentComplete": 65, "ragNote": "MERIDIAN-4 (mobile push endpoints) completed Apr 3. API contract negotiations 65% complete. Targeting Apr 18. MERIDIAN tooling (M4) completion required before final sign-off." },
+        { "id": "HORIZON-M4", "name": "iOS alpha (internal)", "targetDate": "2026-05-15", "completedDate": null, "status": "at_risk", "percentComplete": 34 },
+        { "id": "HORIZON-M5", "name": "Android alpha (internal)", "targetDate": "2026-05-15", "completedDate": null, "status": "at_risk", "percentComplete": 30 },
+        { "id": "HORIZON-M6", "name": "Beta — 10 enterprise customers", "targetDate": "2026-08-15", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "SLIPPED from Jun 15. Auth0 punt confirmed — IAM needed Jun, NEXUS delivers Aug 28. Beta cannot proceed without mobile SSO." },
+        { "id": "HORIZON-M7", "name": "App Store / Play Store submission", "targetDate": "2026-08-20", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "SLIPPED from Jun 20. 2-3 week App Store review — Aug 20 submission targets Aug 31 GA minimum." },
+        { "id": "HORIZON-M8", "name": "GA launch", "targetDate": "2026-08-31", "completedDate": null, "status": "behind", "percentComplete": 0, "ragNote": "SLIPPED from Jul 31. Auth0 cascade confirmed. Kestrel deal (budget cycle Jul) and Solaris deal (Palantir eval) both at heightened risk." }
+      ]
+    },
+    {
+      "id": "PRG-SPARK",
+      "name": "SPARK — NovaAI v2 Core Platform",
+      "tpm": "daniel.rios@novagrid.io",
+      "sponsor": "leo.nakamura@novagrid.io",
+      "priority": "P1",
+      "phase": "Execution",
+      "startDate": "2026-02-01",
+      "targetEndDate": "2026-12-31",
+      "overallRag": "amber",
+      "ragRationale": "M1 architecture review completed Mar 24 (Karl-facilitated). Now in Execution. Model Serving descoped 90% → 55% — M2 slips Jun 30 → Aug 11. Vector Store v2 (M4) ahead of plan at 74%.",
+      "milestones": [
+        { "id": "SPARK-M1", "name": "Architecture design review", "targetDate": "2026-03-24", "completedDate": "2026-03-24", "status": "completed", "percentComplete": 100, "ragNote": "Completed Mar 24. Karl Bergstrom facilitated Mar 17 session; Leo approved revised architecture Mar 24. vLLM chosen for model serving layer." },
+        { "id": "SPARK-M2", "name": "New model serving alpha", "targetDate": "2026-08-11", "completedDate": null, "status": "behind", "percentComplete": 8, "ragNote": "SLIPPED from Jun 30 by 6 weeks. Model Serving team descoped from 90% to 55% commitment. Alpha development started Apr 1 but at reduced velocity." },
+        { "id": "SPARK-M3", "name": "Visual workflow builder beta", "targetDate": "2026-07-31", "completedDate": null, "status": "not_started", "percentComplete": 0, "ragNote": "Can begin once M2 architecture patterns are established. Not at risk yet." },
+        { "id": "SPARK-M4", "name": "Vector Store v2 with enterprise isolation", "targetDate": "2026-06-30", "completedDate": null, "status": "on_track", "percentComplete": 74, "ragNote": "Embeddings team independent of Model Serving bottleneck. Ahead of plan." },
+        { "id": "SPARK-M5", "name": "Multi-modal input support", "targetDate": "2026-09-30", "completedDate": null, "status": "not_started", "percentComplete": 0 },
+        { "id": "SPARK-M6", "name": "Evaluation framework", "targetDate": "2026-08-31", "completedDate": null, "status": "not_started", "percentComplete": 0 },
+        { "id": "SPARK-M7", "name": "NovaAI v2 platform GA", "targetDate": "2026-12-31", "completedDate": null, "status": "not_started", "percentComplete": 0, "ragNote": "M2 slip to Aug 11 puts downstream M3/M5 under pressure. GA target Dec 31 — still achievable if M2 holds Aug." }
+      ]
+    }
+  ]
+}
