@@ -1,8 +1,8 @@
 # TPM AI Playbook
 
-Practical AI skills, workflows, and agents for Technical Program Managers — built as a Claude Code plugin.
+Practical AI skills, workflows, and agents for Technical Program Managers. 
 
-This is the companion library for the [2026.AI series on Substack](https://substack.com/@michigoetz). Each article ships with the skills to reproduce the run yourself.
+This is the companion library for the [2026.AI series on Substack](https://substack.com/@michigoetz).
 
 ---
 
