@@ -1,6 +1,7 @@
 # TPM AI Playbook
 
 Practical AI skills, workflows, and agents for Technical Program Managers. 
+This is build with Claude Code and can be used in Claude Code. 
 
 This is the companion library for the [2026.AI series on Substack](https://substack.com/@michigoetz).
 
