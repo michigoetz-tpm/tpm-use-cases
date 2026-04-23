@@ -17,6 +17,7 @@ Before running skills, create these context files in the repo root:
 - `/tpm-extract-blockers` → `skills/5-execution-delivery/tpm-extract-blockers.md`
 - `/tpm-risk-identifier` → `skills/5-execution-delivery/tpm-risk-identifier.md`
 - `/tpm-stakeholder-update` → `skills/5-execution-delivery/tpm-stakeholder-update.md`
+- `/tpm-power-questions` → `skills/5-execution-delivery/tpm-power-questions.md`
 
 ## Workflows
 - `/tpm-workflow-execution-health` → `workflows/tpm-workflow-execution-health.md`

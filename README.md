@@ -5,7 +5,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/michigoetz-tpm/tpm-use-cases/blob/main/CONTRIBUTING.md)
 [![Version](https://img.shields.io/badge/version-v0.1-blue?style=flat-square)](https://github.com/michigoetz-tpm/tpm-use-cases/blob/main/CHANGELOG.md)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-5C4EE5?style=flat-square)](https://claude.ai/code)
-![Skills](https://img.shields.io/badge/skills-5-informational?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-6-informational?style=flat-square)
 ![Workflows](https://img.shields.io/badge/workflows-1-informational?style=flat-square)
 
 Practical AI skills, workflows, and agents for Technical Program Managers — built as a Claude Code plugin.
@@ -57,6 +57,19 @@ Mid-entry is supported — start at any stage if you already have earlier output
 
 ---
 
+## TPM Power Questions — Article 2026.AI.07
+
+A library of 30 questions for TPMs, Engineering Managers, Software Engineers, and Product Managers navigating cross-functional programs. Two modes: situational lookup for meeting prep and mid-program diagnosis, and AI governance pre-flight before expanding or trusting an agent.
+
+**Run it:**
+```
+/tpm-power-questions
+```
+
+Works in Claude, ChatGPT, Gemini, or any AI tool. Paste in your situation — the skill routes to the highest-leverage questions for that moment.
+
+---
+
 ## What's in This Repo
 
 ### Skills
@@ -68,6 +81,7 @@ Mid-entry is supported — start at any stage if you already have earlier output
 | `/tpm-extract-blockers` | Blocker extraction — pull blockers from any input, classify by severity, suggest owners |
 | `/tpm-risk-identifier` | Risk surfacing — identify new risks, update existing register, classify by likelihood and impact |
 | `/tpm-stakeholder-update` | Stakeholder-segmented communications — right level of detail to the right audience |
+| `/tpm-power-questions` | 30-question library for cross-functional programs — situational lookup and AI governance pre-flight |
 
 ### Agents
 
