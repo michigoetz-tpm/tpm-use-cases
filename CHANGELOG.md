@@ -6,6 +6,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [v0.2] - 2026-04-22
+
+### Added - TPM Power Questions (Article 2026.AI.07)
+
+**Skills**
+- `tpm-power-questions` - 30-question library for cross-functional programs. Two modes: situational lookup (meeting prep, mid-program diagnosis, retros, stakeholder reviews) and AI governance pre-flight (before expanding or trusting an agent output)
+
+**Repo**
+- `README.md` - New article section for 2026.AI.07, `/tpm-power-questions` added to skills table, skills badge updated to 6
+- `CLAUDE.md` - `/tpm-power-questions` registered as slash command
+
+---
+
 ## [v0.1] - 2026-04-16
 
 ### Added - The Delivery Agent (Article 2026.AI.06)
